@@ -54,3 +54,44 @@ h1, h2, h3, h4, h5, h6 {
 /******************/
 /* Root variables */
 /******************/
+
+/***************************/
+/* TEMPORAL FOR VISIBILITY */
+/***************************/
+* {
+  outline: 1px solid black;
+}
+
+/******************/
+/* Page Layout */
+/******************/
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 4fr;
+  grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+/**************/
+/* Sidebar */
+/**************/
+.sidebar {
+  background-color: bisque; /* Temporal color for visibility */
+  grid-area: sidebar;
+}
+
+/**********/
+/* Header */
+/**********/
+.header {
+  grid-area: header;
+}
+
+/********/
+/* Main */
+/********/
+.main {
+  grid-area: main;
+}
