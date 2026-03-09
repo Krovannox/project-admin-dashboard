@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Page Layout */
 /******************/
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template: 1fr 5fr / 1fr 4fr;
   grid-template-areas: 
@@ -80,6 +80,23 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar {
   background-color: bisque; /* Temporal color for visibility */
   grid-area: sidebar;
+  display: grid;
+  grid-template-rows: min-content 1fr 1fr;
+  gap: 1rem;
+}
+
+.sidebar-main-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: gainsboro;
+}
+
+.dashboard-main-icon {
+  height: 60px;
+}
+
+.dashboard-icons {
+  height: 50px;
 }
 
 /**********/
