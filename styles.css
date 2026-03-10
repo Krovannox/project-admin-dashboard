@@ -78,32 +78,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar */
 /***********/
 .sidebar {
-  background-color: bisque; /* Temporal color for visibility */
+  background-color: royalblue; /* Temporal color for visibility */
+  color: white;
   padding: 15px;
+  
   grid-area: sidebar;
   display: grid;
   grid-template-rows: min-content 1fr 1fr;
   gap: 1rem;
-}
-
-.sidebar-main-item {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  align-items: center;
-  gap: 15px;
-  background-color: gainsboro;
-}
-
-.dashboard-main-icon {
-  min-width: 5rem;
-}
-
-.sidebar-main-item > span {
-  font-size: 2.5rem;
-}
-
-.dashboard-icons {
-  height: 50px;
 }
 
 /**********/
