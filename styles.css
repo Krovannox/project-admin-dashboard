@@ -54,13 +54,18 @@ h1, h2, h3, h4, h5, h6 {
 /******************/
 /* Root variables */
 /******************/
+:root {
+  /* Sidebar */
+  --sidebar-bg-clr: #574964;
+  --sidebar-text-clr: #FFFFFF;
+}
 
 /***************************/
 /* TEMPORAL FOR VISIBILITY */
 /***************************/
-* {
+/* * {
   outline: 1px solid black;
-}
+} */
 
 /***************/
 /* Page Layout */
@@ -78,13 +83,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar */
 /***********/
 .sidebar {
-  background-color: royalblue; /* Temporal color for visibility */
-  padding: 1rem 2rem 1rem 2rem;
+  background-color: var(--sidebar-bg-clr);
+  color: var(--sidebar-text-clr);
+  padding: 1rem 1.5rem 1rem 1.5rem;
 
   grid-area: sidebar;
   display: grid;
   grid-template-rows: repeat(3, min-content);
-  gap: 4.5rem;
+  gap: 4rem;
 }
 
 .sidebar-logo {
@@ -97,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-logo-icon {
   width: 4.5rem;
   height: auto;
+  filter: invert(1);
 }
 
 .sidebar-logo-label {
@@ -119,6 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
+  color: var(--sidebar-text-clr);
   padding-left: 1rem;
   
   display: flex;
@@ -128,22 +136,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-icon {
-  width: 2.75rem;
+  width: 2rem;
   height: auto;
+  filter: invert(1);
 }
-
-/*****TEMPORARY*****/
-.sidebar-logo,
-.sidebar-menu {
-  background-color: lightgray;
-}
-/*****TEMPORARY*****/
-
-/*****TEMPORARY*****/
-.sidebar-link {
-  background-color: wheat;
-}
-/*****TEMPORARY*****/
 
 /**********/
 /* Header */
