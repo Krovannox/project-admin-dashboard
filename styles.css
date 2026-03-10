@@ -60,13 +60,6 @@ h1, h2, h3, h4, h5, h6 {
   --sidebar-text-clr: #FFFFFF;
 }
 
-/***************************/
-/* TEMPORAL FOR VISIBILITY */
-/***************************/
-/* * {
-  outline: 1px solid black;
-} */
-
 /***************/
 /* Page Layout */
 /***************/
@@ -144,8 +137,22 @@ h1, h2, h3, h4, h5, h6 {
 /**********/
 /* Header */
 /**********/
+
+/* TEMPORAL FOR VISIBILITY */
+.header,
+.header * {
+  outline: 1px solid black;
+}
+/* TEMPORAL FOR VISIBILITY */
+
 .header {
+  background-color: lightgray;
+  color: black;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+
   grid-area: header;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
 }
 
 /********/
