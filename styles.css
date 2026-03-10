@@ -62,9 +62,9 @@ h1, h2, h3, h4, h5, h6 {
   outline: 1px solid black;
 }
 
-/******************/
+/***************/
 /* Page Layout */
-/******************/
+/***************/
 .main-container {
   min-height: 100vh;
   display: grid;
@@ -74,11 +74,12 @@ h1, h2, h3, h4, h5, h6 {
     "sidebar main";
 }
 
-/**************/
+/***********/
 /* Sidebar */
-/**************/
+/***********/
 .sidebar {
   background-color: bisque; /* Temporal color for visibility */
+  padding: 15px;
   grid-area: sidebar;
   display: grid;
   grid-template-rows: min-content 1fr 1fr;
@@ -87,12 +88,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar-main-item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  gap: 15px;
   background-color: gainsboro;
 }
 
 .dashboard-main-icon {
-  height: 60px;
+  min-width: 5rem;
+}
+
+.sidebar-main-item > span {
+  font-size: 2.5rem;
 }
 
 .dashboard-icons {
