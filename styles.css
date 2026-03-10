@@ -79,14 +79,71 @@ h1, h2, h3, h4, h5, h6 {
 /***********/
 .sidebar {
   background-color: royalblue; /* Temporal color for visibility */
-  color: white;
-  padding: 15px;
-  
+  padding: 1rem 2rem 1rem 2rem;
+
   grid-area: sidebar;
   display: grid;
-  grid-template-rows: min-content 1fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  gap: 4.5rem;
+}
+
+.sidebar-logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sidebar-logo-icon {
+  width: 4.5rem;
+  height: auto;
+}
+
+.sidebar-logo-label {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sidebar-menu {
+  padding: 0;
+
+  display: grid;
+  gap: 1.25rem;
+}
+
+.sidebar-item {
+  list-style-type: none;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  
+  display: flex;
+  flex: 1;
+  align-items: center;
   gap: 1rem;
 }
+
+.sidebar-icon {
+  width: 2.75rem;
+  height: auto;
+}
+
+/*****TEMPORARY*****/
+.sidebar-logo,
+.sidebar-menu {
+  background-color: lightgray;
+}
+/*****TEMPORARY*****/
+
+/*****TEMPORARY*****/
+.sidebar-link {
+  background-color: wheat;
+}
+/*****TEMPORARY*****/
 
 /**********/
 /* Header */
