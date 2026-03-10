@@ -155,6 +155,41 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-rows: 1fr 2fr;
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-form {
+  display: flex;
+}
+
+.header-search-icon {
+  width: 2rem;
+  height: auto;
+}
+
+.header-search-input {
+  height: 2rem;
+  width: 50rem;
+  border-radius: 0.5rem;
+}
+
+.header-notification-area {
+  display: flex;
+}
+
+.header-notification-icon {
+  width: 2rem;
+  height: auto;
+}
+
+.header-profile-picture-small {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 /********/
 /* Main */
 /********/
