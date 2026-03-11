@@ -75,6 +75,13 @@ h1, h2, h3, h4, h5, h6 {
   --btn-text-clr: #FFFFFF;
   --btn-hover-clr: #9A80FF;
   --btn-active-clr: #5A3EE6;
+
+  /* Main content colors */
+  --dashboard-bg-clr: #0F0F12;
+  --card-bg-clr: #20202A;
+  --card-border-shadow-clr: #2B2B36;
+  --card-title-clr: #9A80FF;
+  --card-text-clr: #B8B8C7;
 }
 
 /***************/
@@ -311,6 +318,53 @@ h1, h2, h3, h4, h5, h6 {
 /********/
 /* Main */
 /********/
+
+/*TEMPORAL*/
+.main * {
+  outline: 1px solid red;
+}
+/*TEMPORAL*/
+
 .main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.main-content {
+  background-color: lightgreen;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.main-card-area {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--card-bg-clr);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.card-heading {
+  color: var(--card-title-clr);
+}
+
+.card-text {
+  color: var(--card-text-clr);
+}
+
+.card-icon {
+  min-height: 1.5rem;
+  width: auto;
+}
+
+.main-aside {
+  background-color: lightpink;
 }
