@@ -57,12 +57,10 @@ h1, h2, h3, h4, h5, h6 {
 :root {
 
   /* Sidebar colors */
-
   --sidebar-bg-clr: #141419;
   --sidebar-text-clr: #FFFFFF;
   --sidebar-link-clr-hover: #9A80FF;
   --sidebar-link-clr-active: #7C5CFF;
-
   --sidebar-hover-bg-clr: #1F1F2B;
   --sidebar-active-bg-clr: #262638;
 }
@@ -115,11 +113,21 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .sidebar-item {
   list-style-type: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.sidebar-item:hover {
+  background-color: var(--sidebar-hover-bg-clr);
+}
+
+.sidebar-item:active {
+  background-color: var(--sidebar-active-bg-clr);
 }
 
 .sidebar-link {
@@ -133,6 +141,14 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
   align-items: center;
   gap: 1rem;
+}
+
+.sidebar-link:hover {
+  color: var(--sidebar-link-clr-hover);
+}
+
+.sidebar-link:active {
+  color: var(--sidebar-link-clr-active);
 }
 
 .sidebar-icon {
