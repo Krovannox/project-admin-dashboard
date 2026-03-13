@@ -319,9 +319,9 @@ h1, h2, h3, h4, h5, h6 {
 /********/
 
 /*TEMPORAL*/
-/* .main * {
+.main * {
   outline: 1px solid red;
-} */
+}
 /*TEMPORAL*/
 
 .main {
@@ -389,6 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 
   display: grid;
   grid-row: repeat(3, 1fr);
+  gap: 5rem; /* Adjust according to screen size ??*/
 }
 
 .announcement-inner-container {
@@ -402,5 +403,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .announcement-text-border {
   border-bottom: 1px solid white;
-  margin-bottom: 2rem;
+}
+
+.trending-user-icon {
+  min-width: 3rem;
+  height: auto;
 }
