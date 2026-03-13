@@ -319,9 +319,9 @@ h1, h2, h3, h4, h5, h6 {
 /********/
 
 /*TEMPORAL*/
-.main * {
+/* .main * {
   outline: 1px solid red;
-}
+} */
 /*TEMPORAL*/
 
 .main {
@@ -378,4 +378,29 @@ h1, h2, h3, h4, h5, h6 {
   
   display: grid;
   grid-template-rows: min-content 1fr min-content 1fr;
+}
+
+.announcements-card {
+  background-color: var(--card-bg-clr);
+  color: var(--card-text-clr);
+  border-radius: 1rem;
+  padding: 3rem;
+  font-size: 0.95rem;
+
+  display: grid;
+  grid-row: repeat(3, 1fr);
+}
+
+.announcement-inner-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.announcement-title {
+  color: var(--card-title-clr);
+}
+
+.announcement-text-border {
+  border-bottom: 1px solid white;
+  margin-bottom: 2rem;
 }
