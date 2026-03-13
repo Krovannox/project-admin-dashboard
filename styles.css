@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 :root {
 
   /* Sidebar colors */
-  --sidebar-bg-clr: #141419;
+  --sidebar-bg-clr: #4B2E83;
   --sidebar-text-clr: #FFFFFF;
   --sidebar-link-clr-hover: #9A80FF;
   --sidebar-link-clr-active: #7C5CFF;
@@ -70,17 +70,17 @@ h1, h2, h3, h4, h5, h6 {
   --search-bg-clr: #FFFFFF;
   --search-text-clr: #000000;
   --search-outline-clr: #D0D0D0;
-  --btn-bg-clr: #7C5CFF;
+  --btn-bg-clr: #6A3FB5;
   --btn-text-clr: #FFFFFF;
   --btn-hover-clr: #9A80FF;
   --btn-active-clr: #5A3EE6;
 
   /* Main content colors */
-  --dashboard-bg-clr: #0F0F12;
-  --card-bg-clr: #20202A;
+  --dashboard-bg-clr: #F3F0FA;
+  --card-bg-clr: #FFFFFF;
   --card-border-shadow-clr: #2B2B36;
-  --card-title-clr: #9A80FF;
-  --card-text-clr: #B8B8C7;
+  --card-title-clr: #2B2240;
+  --card-text-clr: #6F6A86;
 
   /* Item paddings and gaps */
   --main-card-padding: 2.75rem;
@@ -342,7 +342,8 @@ button {
   display: grid;
   grid-template-columns: 7fr 2fr;
   gap: 1.75rem;
-  padding: 2rem 2.25rem;
+  padding: 2rem 3rem;
+  background-color: var(--dashboard-bg-clr);
 }
 
 .main-content {
@@ -459,6 +460,7 @@ button {
 
 .trending-user-handle {
   grid-area: user-handle;
+  color: var(--card-title-clr);
 }
 
 .trending-username {
