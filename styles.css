@@ -384,6 +384,21 @@ button {
   gap: 1.5rem;
 }
 
+.card-btn-icon {
+  background-color: transparent;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.card-btn-icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-btn-icon:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .card-icon {
   min-height: 1.9rem;
   width: auto;
@@ -415,7 +430,7 @@ button {
 }
 
 .announcement-text-border {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--card-text-clr);
 }
 
 .main-heading-trending {
@@ -451,8 +466,8 @@ button {
 }
 
 .trending-user-icon {
-  min-width: 2.5rem;
-  height: 2.5rem;
+  min-width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 
   grid-area: icon;
@@ -461,8 +476,11 @@ button {
 .trending-user-handle {
   grid-area: user-handle;
   color: var(--card-title-clr);
+  font-weight: bold;
+  font-size: 1.15rem;
 }
 
 .trending-username {
   grid-area: username;
+  font-size: 1.05rem;
 }
