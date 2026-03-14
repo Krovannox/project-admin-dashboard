@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 /***********/
 
 .sidebar {
-  padding: 2rem 6rem 2rem 3rem;
+  padding: 2rem 5rem 2rem 2.5rem;
   background-color: var(--sidebar-bg-clr);
   color: var(--sidebar-text-clr);
   
@@ -168,15 +168,26 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .header-search-area {
-  padding-right: 15%;
+  flex: 1;
+  max-width: 1000px;
 
   display: flex;
   align-items: center;
   flex: 1;
   gap: 1rem;
+}
+
+.header-search-input {
+  border: none;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 100%;
+  padding-inline: 1rem;
+  font-size: 1.15rem;
 }
 
 .header-search-button {
@@ -194,15 +205,6 @@ h1, h2, h3, h4, h5, h6 {
 .header-search-icon {
   width: 1.75rem;
   height: auto;
-}
-
-.header-search-input {
-  border: none;
-  border-radius: 1rem;
-  height: 2rem;
-  width: 100%;
-  padding-inline: 1rem;
-  font-size: 1.15rem;
 }
 
 .header-notification-area {
