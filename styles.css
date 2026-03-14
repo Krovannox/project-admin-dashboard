@@ -54,15 +54,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Root variables */
 /******************/
 :root {
-  --sidebar-bg-clr: #36064D;
+  --sidebar-bg-clr: #001d3d;
   --sidebar-text-clr: #FFFFFF;
+  --sidebar-text-hover-clr: #ffc300;
+  --sidebar-text-active-clr: #ffd60a;
 }
-
-/* TEMPORAL */
-* {
-  outline: 1px solid yellow;
-}
-/* TEMPORAL */
 
 /*************************/
 /* Main page grid layout */
@@ -135,6 +131,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--sidebar-text-clr);
+}
+
+.sidebar-menu-item-text:hover {
+  text-decoration: underline;
+  color: var(--sidebar-text-hover-clr)
+}
+
+.sidebar-menu-item-text:active {
+  text-decoration: underline;
+  color: var(--sidebar-text-active-clr)
 }
 
 /**********/
