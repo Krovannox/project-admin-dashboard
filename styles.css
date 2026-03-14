@@ -53,10 +53,14 @@ h1, h2, h3, h4, h5, h6 {
 /******************/
 /* Root variables */
 /******************/
+:root {
+  --sidebar-bg-clr: #36064D;
+  --sidebar-text-clr: #FFFFFF;
+}
 
 /* TEMPORAL */
 * {
-  outline: 1px solid black;
+  outline: 1px solid yellow;
 }
 /* TEMPORAL */
 
@@ -78,6 +82,8 @@ h1, h2, h3, h4, h5, h6 {
 /***********/
 .sidebar {
   padding: 2rem;
+  background-color: var(--sidebar-bg-clr);
+  color: var(--sidebar-text-clr);
   
   grid-area: sidebar;
   display: grid;
@@ -94,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-logo-icon {
   width: 5rem;
   height: auto;
+  filter: invert(1);
 }
 
 .sidebar-logo-text {
@@ -120,12 +127,14 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-menu-item-icon {
   width: 3rem;
   height: auto;
+  filter: invert(1);
 }
 
 .sidebar-menu-item-text {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.5rem;
+  color: var(--sidebar-text-clr);
 }
 
 /**********/
