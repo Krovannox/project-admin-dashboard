@@ -92,8 +92,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-logo-icon {
-  width: 3rem;
+  width: 5rem;
   height: auto;
+}
+
+.sidebar-logo-text {
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .sidebar-menu-item-icon {
