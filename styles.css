@@ -85,6 +85,12 @@ h1, h2, h3, h4, h5, h6 {
   gap: 3rem;
 }
 
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .sidebar-logo-icon {
   width: 3rem;
   height: auto;
