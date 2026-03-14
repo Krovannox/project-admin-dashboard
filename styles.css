@@ -80,6 +80,16 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: sidebar;
 }
 
+.sidebar-logo-icon {
+  width: 3rem;
+  height: auto;
+}
+
+.sidebar-menu-item-icon {
+  width: 3rem;
+  height: auto;
+}
+
 /**********/
 /* HEADER */
 /**********/
