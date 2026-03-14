@@ -54,10 +54,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Root variables */
 /******************/
 :root {
-  --sidebar-bg-clr: #001d3d;
+  --sidebar-bg-clr: #001D3D;
   --sidebar-text-clr: #FFFFFF;
-  --sidebar-text-hover-clr: #ffc300;
-  --sidebar-text-active-clr: #ffd60a;
+  --sidebar-link-hover-clr: #FFC300;
+  --sidebar-link-active-clr: #FFD60A;
 }
 
 /*************************/
@@ -76,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 /***********/
 /* SIDEBAR */
 /***********/
+
 .sidebar {
   padding: 2rem 6rem 2rem 3rem;
   background-color: var(--sidebar-bg-clr);
@@ -84,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: sidebar;
   display: grid;
   grid-template-rows: repeat(3, min-content);
-  gap: 3rem;
+  gap: 4.5rem;
 }
 
 .sidebar-logo {
@@ -94,22 +95,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-logo-icon {
-  width: 5rem;
+  width: 4rem;
   height: auto;
   filter: invert(1);
 }
 
 .sidebar-logo-text {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
 }
 
 .sidebar-menu {
-  padding: 0;
+  padding-left: 1rem;
   
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .sidebar-menu-item {
@@ -117,11 +118,11 @@ h1, h2, h3, h4, h5, h6 {
 
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.75rem;
 }
 
 .sidebar-menu-item-icon {
-  width: 3rem;
+  width: 2rem;
   height: auto;
   filter: invert(1);
 }
@@ -129,18 +130,16 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-menu-item-text {
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--sidebar-text-clr);
 }
 
 .sidebar-menu-item-text:hover {
-  text-decoration: underline;
-  color: var(--sidebar-text-hover-clr)
+  color: var(--sidebar-link-hover-clr)
 }
 
 .sidebar-menu-item-text:active {
-  text-decoration: underline;
-  color: var(--sidebar-text-active-clr)
+  color: var(--sidebar-link-active-clr)
 }
 
 /**********/
