@@ -146,12 +146,6 @@ h1, h2, h3, h4, h5, h6 {
 /* HEADER */
 /**********/
 
-/*** TEMPORAL ***/
-.header * {
-  outline: 1px solid black;
-}
-/*** TEMPORAL ***/
-
 .header {
   padding: 2rem 3rem;
   background-color: lightslategray;
@@ -267,6 +261,19 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: username-handle;
 
   font-size: 1.75rem;
+}
+
+.header-buttons-area {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-button {
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.15rem;
 }
 
 /********/
