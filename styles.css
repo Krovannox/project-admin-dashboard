@@ -219,8 +219,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-profile-picture-small {
-  width: 4rem;
-  aspect-ratio: 1;
+  width: 3.5rem;
+  height: auto;
   border: none;
   border-radius: 50%;
 }
@@ -232,6 +232,41 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-bottom {
   background-color: lightskyblue;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-user-greeting-area {
+  font-weight: 700;
+  
+  display: grid;
+  grid-template: repeat(2, auto) / min-content 1fr;
+  grid-template-areas: 
+    "header-picture user-greeting"
+    "header-picture username-handle";
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.header-profile-picture-medium {
+  grid-area: header-picture;
+
+  min-width: 4.5rem;
+  height: auto;
+  border: none;
+  border-radius: 50%;
+}
+
+.header-greeting {
+  grid-area: user-greeting;
+}
+
+.header-username-handle {
+  grid-area: username-handle;
+
+  font-size: 1.75rem;
 }
 
 /********/
