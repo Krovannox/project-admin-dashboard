@@ -54,10 +54,34 @@ h1, h2, h3, h4, h5, h6 {
 /* Root variables */
 /******************/
 :root {
-  --sidebar-bg-clr: #001D3D;
+  --sidebar-bg-clr: #000000;
   --sidebar-text-clr: #FFFFFF;
-  --sidebar-link-hover-clr: #FFC300;
-  --sidebar-link-active-clr: #FFD60A;
+  --sidebar-link-hover-clr: #BC1E22;
+  --sidebar-link-active-clr: #DD3137;
+
+  --header-bg-clr: #394A59;
+  --header-text-clr: #FFFFFF;
+  --header-btn-clr: #DFDFDF;
+  --header-btn-hover-clr: #BC1E22;
+  --header-btn-active-clr: #DD3137;
+
+  --main-bg-clr: #64696C;
+  --main-text-clr: #000000;
+  --card-bg-clr: #FFFFFF;
+  --card-text-clr: #000000;
+  --card-accent-clr: #556567;
+
+  /* TEMPORAL THEME
+  Star Wars Yellow #FFE81F
+  Galaxy Black #000000
+  Unity White #FFFFFF
+  Durasteel Grey #64696C
+  Coruscant Blue #394A59
+  Imperial Red #BC1E22
+  Valor Green #556567
+  Vader Armor Gray #242424
+  Vader Panel Light #DFDFDF
+  */
 }
 
 /*************************/
@@ -148,7 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   padding: 2rem 3rem;
-  background-color: lightslategray;
+  background-color: var(--header-bg-clr);
+  color: var(--header-text-clr);
   
   grid-area: header;
   display: grid;
@@ -157,8 +182,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-top {
-  background-color: lightgreen;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -190,10 +213,19 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   border: none;
   border-radius: 50%;
+  background-color: var(--header-btn-clr);
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header-search-button:hover {
+  background-color: var(--header-btn-hover-clr);
+}
+
+.header-search-button:active {
+  background-color: var(--header-btn-active-clr);
 }
 
 .header-search-icon {
@@ -205,6 +237,27 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.header-notification-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--header-btn-clr);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-notification-button:hover {
+  background-color: var(--header-btn-hover-clr);
+}
+
+.header-notification-button:active {
+  background-color: var(--header-btn-active-clr);
 }
 
 .header-notification-icon {
@@ -225,8 +278,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-bottom {
-  background-color: lightskyblue;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -274,6 +325,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2rem;
   font-weight: 700;
   font-size: 1.15rem;
+  background-color: var(--header-btn-clr);
+}
+
+.header-button:hover {
+  background-color: var(--header-btn-hover-clr);
+}
+
+.header-button:active {
+  background-color: var(--header-btn-active-clr);
 }
 
 /********/
