@@ -351,3 +351,10 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 7fr 2fr;
 }
+
+.main-projects {
+  background-color: lightgreen;
+
+  display: grid;
+  grid-template-rows: min-content 1fr
+}
