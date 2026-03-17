@@ -435,7 +435,36 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
 }
 
+.trending-container {
+  background-color: var(--aside-bg-clr);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trending-section {
+  display: grid;
+  grid-template: repeat(2, min-content) / min-content 1fr;
+  grid-template-areas: 
+    "trending-user-icon trending-user-handle"
+    "trending-user-icon user-short-description";
+  column-gap: 1rem;
+}
+
 .trending-user-icon {
-  width: 2rem;
-  height: 2rem;
+  min-width: 3rem;
+  height: 3rem;
+
+  grid-area: trending-user-icon;
+}
+
+.trending-user-handle {
+  grid-area: trending-user-handle;
+}
+
+.user-short-description {
+  grid-area: user-short-description;
 }
