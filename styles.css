@@ -396,12 +396,24 @@ font-size: 1.25rem;
 }
 
 .card-btn {
-  width: 2rem;
-  height: 2rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0.5rem;
+  background-color: var(--header-btn-clr);
+  border: none;
+  border-radius: 1rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-btn:hover {
+  background-color: var(--header-btn-hover-clr);
+}
+
+.card-btn:active {
+  background-color: var(--header-btn-active-clr);
 }
 
 .btn-ico {
