@@ -477,7 +477,7 @@ font-size: 1.25rem;
 
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.75rem;
 }
 
 .trending-section {
@@ -490,16 +490,33 @@ font-size: 1.25rem;
 }
 
 .trending-user-icon {
-  min-width: 3rem;
-  height: 3rem;
+  min-width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
 
   grid-area: trending-user-icon;
 }
 
 .trending-user-handle {
+  text-decoration: none;
+  color: var(--aside-title-clr);
+  font-weight: 700;
+  font-size: 1.2rem;
+
   grid-area: trending-user-handle;
 }
 
+.trending-user-handle:hover {
+  color: var(--header-btn-hover-clr);
+}
+
+.trending-user-handle:active {
+  color: var(--header-btn-active-clr);
+}
+
 .user-short-description {
+  color: var(--aside-text-clr);
+  font-size: 1.1rem;
+
   grid-area: user-short-description;
 }
