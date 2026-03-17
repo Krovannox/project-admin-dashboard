@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 /**********/
 
 .header {
-  padding: 2rem 3rem;
+  padding: 2rem 3.5rem;
   background-color: var(--header-bg-clr);
   color: var(--header-text-clr);
   
@@ -341,14 +341,14 @@ font-size: 1.25rem;
 /********/
 
 .main {
-  padding: 2rem 3rem;
+  padding: 2rem 3.5rem;
   background-color: var(--main-bg-clr);
   color: var(--main-text-clr);
   
   grid-area: main;
   display: grid;
   grid-template-columns: 7fr 2fr;
-  column-gap: 2rem;
+  column-gap: 3rem;
 }
 
 .main-projects {
@@ -364,7 +364,7 @@ font-size: 1.25rem;
 .main-cards-area {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .card {
