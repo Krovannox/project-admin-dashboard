@@ -439,6 +439,22 @@ font-size: 1.25rem;
   gap: 1rem;
 }
 
+.announcements-container > div {
+  border-bottom: 2px solid var(--card-accent-clr);
+}
+
+.announcements-container div:last-child {
+  border-bottom: none;
+}
+
+.announcement-section > p {
+  margin-bottom: 1rem;
+}
+
+.announcements-container div:last-child p {
+  margin-bottom: 0;
+}
+
 .announcement-text {
   color: var(--aside-text-clr);
 }
