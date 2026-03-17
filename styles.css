@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: header;
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .header-top {
@@ -196,18 +196,19 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: 1rem;
   background-color: var(--header-search-input-clr);
-  height: 2rem;
+  color: var(--header-text-clr);
+  height: 2.75rem;
   width: 100%;
   padding-inline: 1rem;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 .header-search-button {
-  width: 2rem;
-  height: 2rem;
+  width: 3.5rem;
+  height: 2.75rem;
   padding: 0;
   border: none;
-  border-radius: 50%;
+  border-radius: 1rem;
   background-color: var(--header-btn-clr);
 
   display: flex;
@@ -300,13 +301,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-greeting {
+font-size: 1.25rem;
+
   grid-area: user-greeting;
 }
 
 .header-username-handle {
-  grid-area: username-handle;
-
   font-size: 1.75rem;
+  
+  grid-area: username-handle;
 }
 
 .header-buttons-area {
@@ -353,6 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-title {
   font-size: 1.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .main-cards-area {
@@ -373,11 +377,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-title {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
 }
 
 .card-text {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--card-text-clr);
 }
 
