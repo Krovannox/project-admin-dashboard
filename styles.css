@@ -1,3 +1,16 @@
+/**************/
+/* Local font */
+/**************/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+        url('./fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /**********************************/
 /* Josh Comeau’s custom CSS reset */
 /**********************************/
@@ -86,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 /*************************/
 .main-container {
   min-height: 100vh;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   
   display: grid;
   grid-template: 1fr 5fr / max-content 1fr;
