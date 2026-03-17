@@ -455,8 +455,14 @@ font-size: 1.25rem;
   margin-bottom: 0;
 }
 
+.announcement-title {
+  color: var(--aside-title-clr);
+  font-size: 1.25rem;
+}
+
 .announcement-text {
   color: var(--aside-text-clr);
+  font-size: 1.1rem;
 }
 
 .aside-trending {
