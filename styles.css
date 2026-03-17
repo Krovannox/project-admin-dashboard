@@ -71,6 +71,9 @@ h1, h2, h3, h4, h5, h6 {
   --card-text-clr: #000000;
   --card-accent-clr: #BC1E22;
 
+  --aside-bg-clr: #FFFFFF;
+  --aside-text-clr: #000000;
+
   /* TEMPORAL THEME
   Star Wars Yellow #FFE81F
   Galaxy Black #000000
@@ -409,6 +412,27 @@ h1, h2, h3, h4, h5, h6 {
 .btn-ico {
   width: 1.8rem;
   height: 1.8rem;
+}
+
+.main-aside {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+}
+
+.announcements-container {
+  background-color: var(--aside-bg-clr);
+  padding: 2rem;
+  border-radius: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.aside-trending {
+  margin-top: 2rem;
 }
 
 .trending-user-icon {
